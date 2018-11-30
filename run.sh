@@ -3,7 +3,7 @@ export JAVA_HOME=/usr/java/default
 export PATH=${JAVA_HOME}/bin:${PATH}
 export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 export HADOOP_PREFIX=/usr/local/hadoop
-export CODE_SPACE=`pwd`
+export CODE_SPACE=/root/code
 
 pushd ${HADOOP_PREFIX}
 bin/hadoop com.sun.tools.javac.Main ${CODE_SPACE}/src/Top.java ${CODE_SPACE}/src/kaola/TopCounter.java ${CODE_SPACE}/src/kaola/TopSort.java ${CODE_SPACE}/src/kaola/Config.java
